@@ -14612,7 +14612,8 @@ M7MO9v/b1FaI31sy+QAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> in K-Fold cross validtaion technique, we basically partition the data in K parts and mark one of the parts as testing sample. We will then train the model thru remaining  (k-1) samples(training parts) and validate the output against the test sample. This cross-validation is repeated k times for each part, hence the name of the technique as k folds. It has advantage over grid search in way that each set of data is used for training and testing and hence bias and variance can be better udnerstood for a particular model with data.</p>
+<p><strong>Answer: </strong> in K-Fold cross validtaion technique, we basically partition the data in K parts and mark one of the parts as testing sample. We will then train the model thru remaining  (k-1) samples(training parts) and validate the output against the test sample. This cross-validation is repeated k times for each part, hence the name of the technique as k folds.</p>
+<p>When we are using GridSearch and supplying K-fold, we are basically testing each part of data when trained with remaining part of data with a particular set of parameters. We will be able to wind up with a robust classfier or algorithm for a data when we test the hyper-parameter results with K -fold in a grid search.</p>
 <p>In K-fold technique, the final result is calculated by taking the average value of output of each run.</p>
 <p>Final value = average(run1, run2,.....)</p>
 
